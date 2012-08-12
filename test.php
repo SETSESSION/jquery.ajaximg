@@ -16,5 +16,5 @@
 
 	$i=$_GET["id"];
 	if(!isset($data[$i])) exit(0);
-	exit(json_encode($data[$i]));
+	exit(json_encode(array("total"=>count($data),"row"=>$data[$i])));
 ?>
